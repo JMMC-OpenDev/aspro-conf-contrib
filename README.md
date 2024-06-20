@@ -5,3 +5,4 @@ the ```Edit / Configuration Manager``` menu always is enabled in the beta versio
 
 ```java -jar -Daspro.expertMode=true Aspro2-22.12.jar```
 
+Please have a look to the [aspro-conf](https://github.com/JMMC-OpenDev/aspro-conf) repository for more informations
