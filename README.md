@@ -1,8 +1,7 @@
 # aspro-conf-contrib
-Community contributed aspro2 configuration files
+Community contributed aspro2 configuration files:
+https://github.com/JMMC-OpenDev/aspro-conf-contrib/
 
-the ```Edit / Configuration Manager``` menu always is enabled in the beta version, else you need to add following option on public version (> 22.04) :
+Note: Use the ```Edit / Configuration Manager``` action in ASPRO2 to load custom configuration files.
 
-```java -jar -Daspro.expertMode=true Aspro2-22.12.jar```
-
-Please have a look to the [aspro-conf](https://github.com/JMMC-OpenDev/aspro-conf) repository for more informations
+Please have a look to the [aspro-conf](https://github.com/JMMC-OpenDev/aspro-conf) repository for more information on the ASPRO2 configuration file format...
