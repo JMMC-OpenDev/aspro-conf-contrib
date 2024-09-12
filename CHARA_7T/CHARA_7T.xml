@@ -206,9 +206,9 @@
             <name>S3</name>
             <telescope>T_mobile</telescope>
             <relativePosition>
-                <posX>-13.368058962166579</posX>
-                <posY>9.601080929999998</posY>
-                <posZ>20.8067716658349</posZ>
+                <posX>-9.09408774057</posX>
+                <posY>12.9060684</posY>
+                <posZ>20.9218704919</posZ>
             </relativePosition>
             <delayLineFixedOffset>0.0</delayLineFixedOffset>
 
@@ -218,9 +218,9 @@
             <name>S4</name>
             <telescope>T_mobile</telescope>
             <relativePosition>
-                <posX>106.92309358853856</posX>
-                <posY>-82.90164109999999</posY>
-                <posZ>-179.14811970560456</posZ>
+                <posX>95.3203720682</posX>
+                <posY>-67.318348205</posY>
+                <posZ>-195.983701482</posZ>
             </relativePosition>
             <delayLineFixedOffset>0.0</delayLineFixedOffset>
 

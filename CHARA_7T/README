@@ -2,4 +2,6 @@ This is the configuration file for CHARA 7Th telescope (all possible new movable
 - 5 fixed fibered telescopes (F1 to F6)
 - 1 mobile telescope placed at several new south, west, north stations...
 
+History:
+- 2024.09.12: fixed S3/S4 station coordinates (Rainer Koehler @ chara)
 
