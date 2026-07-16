@@ -17,6 +17,7 @@ Requested by fournierq@mpe.mpg.de :
 lolo @ jmmc
 
 2026-02-16	LB, created
+2026-07-16  LB, updated:  A0DL6 B5DL5 D0DL1 U2DL2 , A0DL1IP1 G1DL5IP3 J2DL4IP5 U2DL2IP7, U2DL2IP1 G1DL5IP3 J2DL4IP5 K0DL3IP7
 
 """
 

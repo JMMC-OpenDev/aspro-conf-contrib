@@ -26037,11 +26037,13 @@
             <!-- Hybrid AT-UT experiment -->
             <!--
                 A0 B2 D0 U2 x
-                K0 U2 D0 J3 x
-                A0 G1 J2 U2 x
+                A0DL6 B5DL5 D0DL1 U2DL2 x
+                A0 G1 J2 U2 x => A0DL1IP1 G1DL5IP3 J2DL4IP5 U2DL2IP7
                 A0 G1 U2 J3 x
-                A0 U2 J2 J3
-                U2 G1 J2 J3
+                A0 U2 J2 J3 x
+                K0 U2 D0 J3 x
+                U2 G1 J2 J3 x
+                U2DL2IP1 G1DL5IP3 J2DL4IP5 K0DL3IP7
             -->
             <configuration>
                 <altName>Hybrid AT-UT [A0 B2 D0 U2]</altName>
@@ -26050,17 +26052,16 @@
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
-                <altName>Medium</altName>
-                <stations>K0 UT2 D0 J3</stations>
+                <altName>Hybrid AT-UT [A0 B5 D0 U2]</altName>
+                <stations>A0 B5 D0 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 J2 U2]</altName>
                 <stations>A0 G1 J2 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+                <delayLines>DL1 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 U2 J3]</altName>
@@ -26075,8 +26076,21 @@
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
             </configuration>
             <configuration>
+                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
+                <altName>Medium</altName>
+                <stations>K0 UT2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
                 <altName>Hybrid AT-UT [U2 G1 J2 J3]</altName>
                 <stations>UT2 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL2 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Hybrid AT-UT [U2 G1 J2 K0]</altName>
+                <stations>UT2 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL2 DL5 DL4 DL3</delayLines>
             </configuration>
@@ -26333,11 +26347,13 @@
             <!-- Hybrid AT-UT experiment -->
             <!--
                 A0 B2 D0 U2 x
-                K0 U2 D0 J3 x
-                A0 G1 J2 U2 x
+                A0DL6 B5DL5 D0DL1 U2DL2 x
+                A0 G1 J2 U2 x => A0DL1IP1 G1DL5IP3 J2DL4IP5 U2DL2IP7
                 A0 G1 U2 J3 x
-                A0 U2 J2 J3
-                U2 G1 J2 J3
+                A0 U2 J2 J3 x
+                K0 U2 D0 J3 x
+                U2 G1 J2 J3 x
+                U2DL2IP1 G1DL5IP3 J2DL4IP5 K0DL3IP7
             -->
             <configuration>
                 <altName>Hybrid AT-UT [A0 B2 D0 U2]</altName>
@@ -26346,17 +26362,16 @@
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
-                <altName>Medium</altName>
-                <stations>K0 UT2 D0 J3</stations>
+                <altName>Hybrid AT-UT [A0 B5 D0 U2]</altName>
+                <stations>A0 B5 D0 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 J2 U2]</altName>
                 <stations>A0 G1 J2 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+                <delayLines>DL1 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 U2 J3]</altName>
@@ -26371,8 +26386,21 @@
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
             </configuration>
             <configuration>
+                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
+                <altName>Medium</altName>
+                <stations>K0 UT2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
                 <altName>Hybrid AT-UT [U2 G1 J2 J3]</altName>
                 <stations>UT2 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL2 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Hybrid AT-UT [U2 G1 J2 K0]</altName>
+                <stations>UT2 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL2 DL5 DL4 DL3</delayLines>
             </configuration>
@@ -26629,11 +26657,13 @@
             <!-- Hybrid AT-UT experiment -->
             <!--
                 A0 B2 D0 U2 x
-                K0 U2 D0 J3 x
-                A0 G1 J2 U2 x
+                A0DL6 B5DL5 D0DL1 U2DL2 x
+                A0 G1 J2 U2 x => A0DL1IP1 G1DL5IP3 J2DL4IP5 U2DL2IP7
                 A0 G1 U2 J3 x
-                A0 U2 J2 J3
-                U2 G1 J2 J3
+                A0 U2 J2 J3 x
+                K0 U2 D0 J3 x
+                U2 G1 J2 J3 x
+                U2DL2IP1 G1DL5IP3 J2DL4IP5 K0DL3IP7
             -->
             <configuration>
                 <altName>Hybrid AT-UT [A0 B2 D0 U2]</altName>
@@ -26642,17 +26672,16 @@
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
-                <altName>Medium</altName>
-                <stations>K0 UT2 D0 J3</stations>
+                <altName>Hybrid AT-UT [A0 B5 D0 U2]</altName>
+                <stations>A0 B5 D0 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 J2 U2]</altName>
                 <stations>A0 G1 J2 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+                <delayLines>DL1 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 U2 J3]</altName>
@@ -26667,8 +26696,21 @@
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
             </configuration>
             <configuration>
+                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
+                <altName>Medium</altName>
+                <stations>K0 UT2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
                 <altName>Hybrid AT-UT [U2 G1 J2 J3]</altName>
                 <stations>UT2 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL2 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Hybrid AT-UT [U2 G1 J2 K0]</altName>
+                <stations>UT2 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL2 DL5 DL4 DL3</delayLines>
             </configuration>
@@ -26925,11 +26967,13 @@
             <!-- Hybrid AT-UT experiment -->
             <!--
                 A0 B2 D0 U2 x
-                K0 U2 D0 J3 x
-                A0 G1 J2 U2 x
+                A0DL6 B5DL5 D0DL1 U2DL2 x
+                A0 G1 J2 U2 x => A0DL1IP1 G1DL5IP3 J2DL4IP5 U2DL2IP7
                 A0 G1 U2 J3 x
-                A0 U2 J2 J3
-                U2 G1 J2 J3
+                A0 U2 J2 J3 x
+                K0 U2 D0 J3 x
+                U2 G1 J2 J3 x
+                U2DL2IP1 G1DL5IP3 J2DL4IP5 K0DL3IP7
             -->
             <configuration>
                 <altName>Hybrid AT-UT [A0 B2 D0 U2]</altName>
@@ -26938,17 +26982,16 @@
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
-                <altName>Medium</altName>
-                <stations>K0 UT2 D0 J3</stations>
+                <altName>Hybrid AT-UT [A0 B5 D0 U2]</altName>
+                <stations>A0 B5 D0 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 J2 U2]</altName>
                 <stations>A0 G1 J2 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+                <delayLines>DL1 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 U2 J3]</altName>
@@ -26963,8 +27006,21 @@
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
             </configuration>
             <configuration>
+                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
+                <altName>Medium</altName>
+                <stations>K0 UT2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
                 <altName>Hybrid AT-UT [U2 G1 J2 J3]</altName>
                 <stations>UT2 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL2 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Hybrid AT-UT [U2 G1 J2 K0]</altName>
+                <stations>UT2 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL2 DL5 DL4 DL3</delayLines>
             </configuration>
@@ -27221,11 +27277,13 @@
             <!-- Hybrid AT-UT experiment -->
             <!--
                 A0 B2 D0 U2 x
-                K0 U2 D0 J3 x
-                A0 G1 J2 U2 x
+                A0DL6 B5DL5 D0DL1 U2DL2 x
+                A0 G1 J2 U2 x => A0DL1IP1 G1DL5IP3 J2DL4IP5 U2DL2IP7
                 A0 G1 U2 J3 x
-                A0 U2 J2 J3
-                U2 G1 J2 J3
+                A0 U2 J2 J3 x
+                K0 U2 D0 J3 x
+                U2 G1 J2 J3 x
+                U2DL2IP1 G1DL5IP3 J2DL4IP5 K0DL3IP7
             -->
             <configuration>
                 <altName>Hybrid AT-UT [A0 B2 D0 U2]</altName>
@@ -27234,17 +27292,16 @@
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
-                <altName>Medium</altName>
-                <stations>K0 UT2 D0 J3</stations>
+                <altName>Hybrid AT-UT [A0 B5 D0 U2]</altName>
+                <stations>A0 B5 D0 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 J2 U2]</altName>
                 <stations>A0 G1 J2 UT2</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+                <delayLines>DL1 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
                 <altName>Hybrid AT-UT [A0 G1 U2 J3]</altName>
@@ -27259,8 +27316,21 @@
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
             </configuration>
             <configuration>
+                <altName>Hybrid AT-UT [K0 U2 D0 J3]</altName>
+                <altName>Medium</altName>
+                <stations>K0 UT2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
                 <altName>Hybrid AT-UT [U2 G1 J2 J3]</altName>
                 <stations>UT2 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL2 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Hybrid AT-UT [U2 G1 J2 K0]</altName>
+                <stations>UT2 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL2 DL5 DL4 DL3</delayLines>
             </configuration>
