@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*******************************************************************************
+* JMMC project ( http://www.jmmc.fr ) - Copyright (C) CNRS.
+*******************************************************************************
+-->
+<!--
+    Document   : XUYI.xml
+    Created on : 2026.09
+    Author     : Isabelle Tallon-Bosc, Laurent Bourgès
+    Description:
+        XUYI interferometer.
+-->
+
+<a:interferometerSetting
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
+    xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
+
+    <description>
+        
+        <name>XUYI</name>
+
+        <description>Chinese Stellar Interferometer (XUYI)</description>
+
+    	 <!--
+          Coordinates XUYI barycentre :
+            lat = 32.73668333333334
+            lon = 118.464062666667
+            alt = 178
+            To xyz geocentric coordinates of this center's array:
+        -->
+	    <position>
+	      <posX>-2559616.4680024465</posX>
+	      <posY>4721286.596866259</posY>
+	      <posZ>3429538.7529581827</posZ>
+	    </position>
+
+        <timezone>China/Nankin</timezone>
+
+       <telescope>
+            <name>T</name>
+            <diameter>0.60</diameter> 
+            <maxElevation>85.0</maxElevation> <!-- arbitrary -->
+       </telescope>
+       
+<!--       
+       <station>
+         <name>S0</name>
+	    <telescope>T</telescope>
+            <relativePosition>
+                <posX>0.0</posX>
+                <posY>0.0</posY>
+                <posZ>0.0</posZ>
+            </relativePosition>
+            <delayLineFixedOffset>0.0</delayLineFixedOffset>
+       </station>
+-->
+       
+       <station>
+	 <name>T1</name>
+	    <!-- 32.736786 118.464223 178 -->
+	   <telescope>T</telescope>
+	   <!-- local equatorial plane -->
+	   <relativePosition>
+		<posX>-7.056949413178803</posX>
+		<posY>15.0284</posY>
+		<posZ>10.976863173959826</posZ>
+	      </relativePosition>
+	      <delayLineFixedOffset>22.4</delayLineFixedOffset>
+	    </station>
+
+      <station>
+            <name>T2</name>
+	    <!--  32.736918 118.463593 178 -->
+      <telescope>T</telescope>
+	   <!-- local equatorial plane -->
+      <relativePosition>
+        <posX>-14.973575175221198</posX>
+        <posY>-44.0229</posY>
+        <posZ>23.290925908645185</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>54.5</delayLineFixedOffset>
+    </station>
+
+        <station>
+            <name>T3</name>
+	    <!--  32.736301 118.464372 178-->
+      <telescope>T</telescope>
+	   <!-- local equatorial plane -->
+      <relativePosition>
+        <posX>22.03041643260345</posX>
+        <posY>28.994699999999998</posY>
+        <posZ>-34.26762084966033</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>52.5</delayLineFixedOffset>
+        </station>
+	
+
+        <!-- no channel nor switchyard -->
+
+        <!-- DL : Maximum delay-line stroke 44 m.
+        The total OPD range that can be compensated by the OPLC is approximately +/- 88m.
+        -->
+        <delayLine>
+            <name>DL1</name>
+            <maximumThrow>88</maximumThrow>
+        </delayLine>
+        <delayLine>
+            <name>DL2</name>
+            <maximumThrow>88</maximumThrow>
+	</delayLine>
+        <delayLine>
+            <name>DL3</name>
+            <maximumThrow>88</maximumThrow>
+        </delayLine>
+
+
+        <!-- instruments (2T) -->
+
+        <focalInstrument>
+            <name>FAKE</name>
+            <description>FAKE combiner (3T)</description>
+
+            <oiVis>false</oiVis>
+            <oiVis2Extra>true</oiVis2Extra>
+
+            <!-- no fringe tracker supported -->
+
+            <setup>
+                <name>FAKE_SETUP</name>
+                <description>FAKE combiner (3T)</description>
+                <defaultSamplingTime>60</defaultSamplingTime>
+
+                <dit>0.01</dit>
+                <ron>10</ron>
+                <detectorSaturation>50000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.7</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.3</fracFluxInPhotometry>
+
+                <nbPixInterferometry>10.0</nbPixInterferometry>
+                <nbPixPhotometry>10.0</nbPixPhotometry>
+
+                <transmission>0.01</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
+
+            <mode>
+                <name>LOW-H</name>
+                <resolution>50</resolution>
+                <waveLengthMin>1.42</waveLengthMin>
+                <waveLengthMax>1.695</waveLengthMax>
+            </mode>
+
+	    
+        </focalInstrument>
+
+    </description>
+
+    <configuration>
+        <interferometer>XUYI</interferometer>
+
+        <!-- FAKE (3T) -->
+        <instrument>
+            <focalInstrument>FAKE</focalInstrument>
+
+            <configuration>
+                <stations>T1 T2 T3</stations>
+            </configuration>
+       </instrument>
+    </configuration>
+
+</a:interferometerSetting>
